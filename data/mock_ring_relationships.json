@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "description": "Synthetic shared-entity graph for NexusMesh Guard Network Intelligence (Subelj et al. 2011). Demonstrates RING-001. NOT real data.",
+    "ring_threshold_shared_entities": 3,
+    "expected_ring": {
+      "ring_id": "RING-001",
+      "members": ["CLM-0007", "CLM-0013", "CLM-0018"],
+      "core_pair": ["CLM-0007", "CLM-0013"],
+      "shared_by_core_pair": ["QuickTow LLC", "Sunshine Auto Repair", "Florida Pain Clinic"]
+    }
+  },
+  "claimant_to_phone": {
+    "C-10007": "305-555-0191",
+    "C-10003": "305-555-0191",
+    "C-10018": "305-555-0142"
+  },
+  "claimant_to_address": {
+    "C-10007": "1234 NW 23rd St, Miami, FL 33125",
+    "C-10003": "1238 NW 23rd St, Miami, FL 33125",
+    "C-10018": "4501 S Vermont Ave, Los Angeles, CA 90011"
+  },
+  "claim_to_tow_company": {
+    "CLM-0007": "QuickTow LLC",
+    "CLM-0013": "QuickTow LLC",
+    "CLM-0018": "QuickTow LLC"
+  },
+  "claim_to_repair_shop": {
+    "CLM-0007": "Sunshine Auto Repair",
+    "CLM-0013": "Sunshine Auto Repair",
+    "CLM-0018": "LA Body Shop"
+  },
+  "claim_to_medical_provider": {
+    "CLM-0007": "Florida Pain Clinic",
+    "CLM-0013": "Florida Pain Clinic"
+  }
+}
