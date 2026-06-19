@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": null,
+    "image_label": null,
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.373728+00:00",
+  "case_id": "CLM-0006",
+  "claim": {
+    "claim_id": "CLM-0006",
+    "claimant_id": "C-10006",
+    "claimed_amount": 2400.0,
+    "has_attached_image": false,
+    "loss_date": "2026-03-28",
+    "loss_type": "pd_liability",
+    "policy_inception_date": "2024-04-18",
+    "policy_number": "POL-CA-2024-0006",
+    "provider": "LA Auto Repair",
+    "state": "CA",
+    "tow_company": null
+  },
+  "derived": {
+    "has_image": false,
+    "policy_age_days": 709,
+    "policy_new_at_loss": false
+  },
+  "schema_version": "case-v1"
+}

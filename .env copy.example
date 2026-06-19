@@ -1,0 +1,14 @@
+# Copy this file to `.env` and fill in real values. `.env` is git-ignored.
+
+# --- Band platform URLs (same for everyone) ---
+THENVOI_REST_URL=https://app.band.ai/
+THENVOI_WS_URL=wss://app.band.ai/api/v1/socket/websocket
+
+# --- Model gateway: your single AI/ML API key powers ALL six agents ---
+AIML_API_KEY=
+
+MONGODB_URI=
+MONGODB_USERNAME=
+MONGODB_PASSWORD=
+# MONGODB_CLUSTER_HOST=
+# MONGODB_APP_NAME=

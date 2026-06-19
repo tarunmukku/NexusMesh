@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": null,
+    "image_label": null,
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.374144+00:00",
+  "case_id": "CLM-0015",
+  "claim": {
+    "claim_id": "CLM-0015",
+    "claimant_id": "C-10015",
+    "claimed_amount": 4400.0,
+    "has_attached_image": false,
+    "loss_date": "2026-05-05",
+    "loss_type": "collision",
+    "policy_inception_date": "2024-11-11",
+    "policy_number": "POL-PA-2024-0015",
+    "provider": "Philly Auto Body",
+    "state": "PA",
+    "tow_company": null
+  },
+  "derived": {
+    "has_image": false,
+    "policy_age_days": 540,
+    "policy_new_at_loss": false
+  },
+  "schema_version": "case-v1"
+}

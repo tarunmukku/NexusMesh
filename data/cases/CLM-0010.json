@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": null,
+    "image_label": null,
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.373920+00:00",
+  "case_id": "CLM-0010",
+  "claim": {
+    "claim_id": "CLM-0010",
+    "claimant_id": "C-10010",
+    "claimed_amount": 3200.0,
+    "has_attached_image": false,
+    "loss_date": "2026-04-08",
+    "loss_type": "pip",
+    "policy_inception_date": "2024-07-19",
+    "policy_number": "POL-NJ-2024-0010",
+    "provider": "Newark Health Group",
+    "state": "NJ",
+    "tow_company": null
+  },
+  "derived": {
+    "has_image": false,
+    "policy_age_days": 628,
+    "policy_new_at_loss": false
+  },
+  "schema_version": "case-v1"
+}

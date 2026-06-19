@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": null,
+    "image_label": null,
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.374100+00:00",
+  "case_id": "CLM-0014",
+  "claim": {
+    "claim_id": "CLM-0014",
+    "claimant_id": "C-10014",
+    "claimed_amount": 1650.0,
+    "has_attached_image": false,
+    "loss_date": "2026-04-18",
+    "loss_type": "comprehensive",
+    "policy_inception_date": "2024-06-25",
+    "policy_number": "POL-NY-2024-0014",
+    "provider": "Manhattan Glass",
+    "state": "NY",
+    "tow_company": null
+  },
+  "derived": {
+    "has_image": false,
+    "policy_age_days": 662,
+    "policy_new_at_loss": false
+  },
+  "schema_version": "case-v1"
+}

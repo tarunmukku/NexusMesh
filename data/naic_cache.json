@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "description": "Fallback cache of real NAIC regulatory references for the Regulatory Browser Agent (Agent 4) when Grok 4.3 live-web fetch is unavailable. URLs and titles are real NAIC publications; summaries are paraphrased.",
+    "cached_on": "2026-06-14",
+    "source": "content.naic.org"
+  },
+  "bulletins": [
+    {
+      "id": "NAIC-Model-Bulletin-2023-AI",
+      "title": "Model Bulletin on the Use of Artificial Intelligence Systems by Insurers",
+      "url": "https://content.naic.org/sites/default/files/inline-files/2023-12-4%20Model%20Bulletin_Adopted_0.pdf",
+      "issuing_body": "NAIC",
+      "effective_date": "2023-12-04",
+      "key_requirement": "Insurers using AI systems must maintain a written AIS program governing fairness, accountability, compliance, transparency, and safety, and must provide consumers with notice when AI materially affects an adverse decision.",
+      "summary": "Adopted Dec 2023; defines insurer responsibilities for AI governance (FACTS). Requires documented controls, third-party model oversight, and consumer notice on adverse AI-influenced decisions. Adopted or in-progress in 40+ states as of 2026.",
+      "facts_relevance": "Primary authority for the NexusMesh Guard FACTS governance layer."
+    },
+    {
+      "id": "NAIC-Model-Law-900",
+      "title": "Unfair Claims Settlement Practices Act (Model #900)",
+      "url": "https://content.naic.org/sites/default/files/model-law-900.pdf",
+      "issuing_body": "NAIC",
+      "effective_date": "1990-01-01",
+      "key_requirement": "Prohibits 14 unfair claims practices including failure to acknowledge claims promptly, failure to adopt reasonable investigation standards, and failure to provide a reasonable explanation for denial.",
+      "summary": "Model law setting standards for prompt, fair, and equitable claims settlement. The Decision Agent checks buckets 2 and 3 of the 14 prohibited practices. Adopted in some form by all states.",
+      "facts_relevance": "Basis for the Compliance (C) check in FACTS and UCSPA conformance notes."
+    },
+    {
+      "id": "NAIC-RBC-Overview",
+      "title": "Risk-Based Capital (RBC) Requirements",
+      "url": "https://content.naic.org/cipr-topics/risk-based-capital",
+      "issuing_body": "NAIC CIPR",
+      "effective_date": "2024-01-01",
+      "key_requirement": "Carriers must maintain capital above the Company Action Level (RBC ratio of 200% of Authorized Control Level); ratios below trigger graduated regulatory intervention.",
+      "summary": "Formula-based minimum capital standard scaled to insurer risk profile. The Policy Risk Analyzer Agent checks a carrier's RBC ratio against the 200% Company Action Level.",
+      "facts_relevance": "Supports the financial-soundness check in the Policy Risk report."
+    }
+  ],
+  "state_reporting_requirements": [
+    {
+      "state": "FL",
+      "trigger": "Knowledge or reasonable belief that a fraudulent insurance act has been or is being committed",
+      "timeframe": "Without unreasonable delay",
+      "reporting_body": "Florida Division of Investigative and Forensic Services (DIFS)"
+    },
+    {
+      "state": "CA",
+      "trigger": "Reasonable belief of suspected fraudulent claim",
+      "timeframe": "60 days",
+      "reporting_body": "California Department of Insurance Fraud Division"
+    },
+    {
+      "state": "TX",
+      "trigger": "Reasonable belief that an act of insurance fraud is about to be, is being, or has been committed",
+      "timeframe": "30 days",
+      "reporting_body": "Texas Department of Insurance Fraud Unit"
+    },
+    {
+      "state": "NY",
+      "trigger": "Reasonable belief of suspected fraudulent claim",
+      "timeframe": "30 days",
+      "reporting_body": "NY DFS Insurance Frauds Bureau"
+    }
+  ]
+}

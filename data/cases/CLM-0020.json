@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": null,
+    "image_label": null,
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.374363+00:00",
+  "case_id": "CLM-0020",
+  "claim": {
+    "claim_id": "CLM-0020",
+    "claimant_id": "C-10020",
+    "claimed_amount": 2100.0,
+    "has_attached_image": false,
+    "loss_date": "2026-04-15",
+    "loss_type": "pd_liability",
+    "policy_inception_date": "2024-12-03",
+    "policy_number": "POL-NY-2024-0020",
+    "provider": "Brooklyn Auto",
+    "state": "NY",
+    "tow_company": null
+  },
+  "derived": {
+    "has_image": false,
+    "policy_age_days": 498,
+    "policy_new_at_loss": false
+  },
+  "schema_version": "case-v1"
+}

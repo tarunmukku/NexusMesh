@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": null,
+    "image_label": null,
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.374051+00:00",
+  "case_id": "CLM-0013",
+  "claim": {
+    "claim_id": "CLM-0013",
+    "claimant_id": "C-10003",
+    "claimed_amount": 12000.0,
+    "has_attached_image": false,
+    "loss_date": "2026-05-22",
+    "loss_type": "theft",
+    "policy_inception_date": "2024-03-08",
+    "policy_number": "POL-CA-2024-0013",
+    "provider": "Sunshine Auto Repair",
+    "state": "CA",
+    "tow_company": "QuickTow LLC"
+  },
+  "derived": {
+    "has_image": false,
+    "policy_age_days": 805,
+    "policy_new_at_loss": false
+  },
+  "schema_version": "case-v1"
+}

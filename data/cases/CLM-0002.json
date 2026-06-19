@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": null,
+    "image_label": null,
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.373479+00:00",
+  "case_id": "CLM-0002",
+  "claim": {
+    "claim_id": "CLM-0002",
+    "claimant_id": "C-10002",
+    "claimed_amount": 1800.0,
+    "has_attached_image": false,
+    "loss_date": "2026-05-02",
+    "loss_type": "comprehensive",
+    "policy_inception_date": "2024-06-10",
+    "policy_number": "POL-CA-2024-0002",
+    "provider": "Bay Area Glass",
+    "state": "CA",
+    "tow_company": null
+  },
+  "derived": {
+    "has_image": false,
+    "policy_age_days": 691,
+    "policy_new_at_loss": false
+  },
+  "schema_version": "case-v1"
+}

@@ -1,0 +1,23 @@
+intake_agent:
+  agent_id: ""      # Agent UUID (agent settings page)
+  api_key: ""       # Agent API key (shown once in the creation popup)
+
+doc_authenticity_agent:
+  agent_id: ""
+  api_key: ""
+
+fraud_agent:
+  agent_id: ""
+  api_key: ""
+
+regulatory_agent:
+  agent_id: ""
+  api_key: ""
+
+policy_agent:
+  agent_id: ""
+  api_key: ""
+
+decision_agent:
+  agent_id: ""
+  api_key: ""

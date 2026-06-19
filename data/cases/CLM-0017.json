@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": null,
+    "image_label": null,
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.374239+00:00",
+  "case_id": "CLM-0017",
+  "claim": {
+    "claim_id": "CLM-0017",
+    "claimant_id": "C-10017",
+    "claimed_amount": 1200.0,
+    "has_attached_image": false,
+    "loss_date": "2026-05-12",
+    "loss_type": "medpay",
+    "policy_inception_date": "2024-04-07",
+    "policy_number": "POL-FL-2024-0017",
+    "provider": "Tampa Family Medical",
+    "state": "FL",
+    "tow_company": null
+  },
+  "derived": {
+    "has_image": false,
+    "policy_age_days": 765,
+    "policy_new_at_loss": false
+  },
+  "schema_version": "case-v1"
+}

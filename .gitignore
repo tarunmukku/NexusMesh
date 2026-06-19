@@ -150,6 +150,9 @@ activemq-data/
 # Environments
 .env
 .envrc
+
+# Band agent credentials (UUIDs + API keys) — NEVER commit
+agent_config.yaml
 .venv
 env/
 venv/
@@ -181,26 +184,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# PyCharm
-#   JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#   be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#   and can be added to the global gitignore or merged into this file.  For a more nuclear
-#   option (not recommended) you can uncomment the following to ignore the entire idea folder.
-# .idea/
-
-# Abstra
-#   Abstra is an AI-powered process automation framework.
-#   Ignore directories containing user credentials, local state, and settings.
-#   Learn more at https://abstra.io/docs
 .abstra/
-
-# Visual Studio Code
-#   Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
-#   that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#   and can be added to the global gitignore or merged into this file. However, if you prefer, 
-#   you could uncomment the following to ignore the entire vscode folder
-# .vscode/
-# Temporary file for partial code execution
 tempCodeRunnerFile.py
 
 # Ruff stuff:
@@ -216,3 +200,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+/docs
+/videos
+
+# Large data files (exceed GitHub limits / not needed in the repo)
+data/sdn/
+data/Car Insurance Fraud Detection-images/
+data/SDN_ENHANCED.XML
+sample_policy_iso_original.pdf
+# Pull full datasets via data/download_data.sh; commit only a tiny curated image sample.
+/tests
+/scripts
+/outputs
+/scratch
+data/download_data.sh

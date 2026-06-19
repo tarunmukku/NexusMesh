@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "description": "Seed of past SIU investigation outcomes so the Fraud Agent has precedents on the first demo run (v3 feedback loop). Hand-crafted, NOT real cases.",
+    "source": "docs/10_SCOPE_AND_TEST_DATA.md section 5"
+  },
+  "outcomes": [
+    {
+      "message_type": "investigation_outcome",
+      "batch_id": "BATCH-2026-000A",
+      "claim_id": "CLM-PRIOR-014",
+      "officer_decision": "APPROVED_FOR_INVESTIGATION",
+      "officer_reason": "FL PIP pattern with flagged tow company (QuickTow LLC) confirmed as staged crash by SIU; recovery initiated",
+      "original_tier": "RED",
+      "patterns_involved": ["P001", "P005", "N001"],
+      "timestamp": "2026-05-12T10:14:00Z"
+    },
+    {
+      "message_type": "investigation_outcome",
+      "batch_id": "BATCH-2026-000A",
+      "claim_id": "CLM-PRIOR-031",
+      "officer_decision": "REJECTED_FALSE_POSITIVE",
+      "officer_reason": "Round-amount flag alone insufficient; claimant provided contractor invoice matching $10,000 exactly",
+      "original_tier": "AMBER",
+      "patterns_involved": ["P002"],
+      "timestamp": "2026-05-12T11:02:00Z"
+    },
+    {
+      "message_type": "investigation_outcome",
+      "batch_id": "BATCH-2026-000B",
+      "claim_id": "CLM-PRIOR-077",
+      "officer_decision": "APPROVED_FOR_INVESTIGATION",
+      "officer_reason": "Synthetic identity confirmed - SSN issued 2019 for claimant claiming age 41",
+      "original_tier": "RED",
+      "patterns_involved": ["P007"],
+      "timestamp": "2026-05-19T09:30:00Z"
+    }
+  ]
+}

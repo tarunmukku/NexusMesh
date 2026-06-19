@@ -1,0 +1,105 @@
+{
+  "_meta": {
+    "description": "Synthetic fraud-pattern database for NexusMesh Guard. Patterns modelled on published NICB ForeWarn indicator descriptions and the Carbo et al. (2025) rule-based ensemble. NOT real claimant data.",
+    "version": "v3",
+    "source": "Hand-crafted (NICB-style). See docs/09_DATA_SOURCES.md"
+  },
+  "individual_patterns": [
+    {
+      "id": "P001",
+      "name": "Early claim",
+      "description": "Loss filed within 30 days of policy inception",
+      "rule": "days_since_inception < 30",
+      "weight": 25,
+      "source": "NICB ForeWarn standard indicator"
+    },
+    {
+      "id": "P002",
+      "name": "Round-dollar amount",
+      "description": "Claimed amount is a multiple of $500 and exceeds $5,000",
+      "rule": "claimed_amount % 500 == 0 and claimed_amount > 5000",
+      "weight": 15,
+      "source": "NICB ForeWarn invoice-fabrication indicator"
+    },
+    {
+      "id": "P003",
+      "name": "OFAC/OIG-flagged provider",
+      "description": "Provider matches a federal exclusion / sanctions list entry",
+      "rule": "provider IN ofac_exclusion_list",
+      "weight": 40,
+      "source": "OFAC SDN + OIG LEIE standard screening"
+    },
+    {
+      "id": "P004",
+      "name": "Duplicate claimant",
+      "description": "Same claimant_id appears on multiple distinct claims in the batch",
+      "rule": "count(claimant_id) > 1",
+      "weight": 30,
+      "source": "NICB ForeWarn duplicate-identity indicator"
+    },
+    {
+      "id": "P005",
+      "name": "FL PIP staged crash",
+      "description": "Florida claim with a flagged tow company and PIP/collision loss within the no-fault window",
+      "rule": "state == 'FL' and tow_company IN flagged_tow_companies",
+      "weight": 35,
+      "source": "NICB FL staged-crash / PIP-mill pattern"
+    },
+    {
+      "id": "P006",
+      "name": "Ring ZIP cluster",
+      "description": "Loss address falls within a known high-incidence fraud-ring ZIP code",
+      "rule": "zip IN ring_zip_codes",
+      "weight": 30,
+      "source": "NICB geographic concentration indicator"
+    },
+    {
+      "id": "P007",
+      "name": "Synthetic identity",
+      "description": "Identity attributes inconsistent (e.g., SSN issue date postdates claimed age)",
+      "rule": "synthetic_identity_signals_present",
+      "weight": 45,
+      "source": "FTC / NICB synthetic-identity indicator"
+    },
+    {
+      "id": "P008",
+      "name": "Cross-carrier duplicate",
+      "description": "Loss event hash matches a claim already filed with another carrier",
+      "rule": "loss_hash IN mock_cross_carrier_hashes",
+      "weight": 50,
+      "source": "ISO ClaimSearch-style cross-carrier matching (mocked)"
+    }
+  ],
+  "network_patterns": [
+    {
+      "id": "N001",
+      "name": "Shared tow company",
+      "description": "Claims in a ring sharing the same tow company",
+      "weight": 35,
+      "source": "Subelj, Furlan & Bajec (2011) shared-entity clustering"
+    },
+    {
+      "id": "N002",
+      "name": "Shared repair + medical provider",
+      "description": "Claims in a ring sharing both a repair shop and a medical provider",
+      "weight": 40,
+      "source": "Subelj, Furlan & Bajec (2011) shared-entity clustering"
+    }
+  ],
+  "flagged_tow_companies": [
+    "QuickTow LLC",
+    "Sunshine Recovery Services",
+    "Miami Quick Tow",
+    "Rapid Auto Recovery"
+  ],
+  "flagged_claimant_ids": [
+    "C-10007",
+    "C-10013"
+  ],
+  "flagged_provider_ids": [
+    "AGRAT CHEMICALS AND PHARMACEUTICALS",
+    "Palmetto Pain Management LLC"
+  ],
+  "ring_zip_codes": ["33125", "33147", "90011", "90044"],
+  "mock_cross_carrier_hashes": ["hash_abc123", "hash_def456"]
+}

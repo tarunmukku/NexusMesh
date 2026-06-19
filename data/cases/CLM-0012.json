@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": null,
+    "image_label": null,
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.374011+00:00",
+  "case_id": "CLM-0012",
+  "claim": {
+    "claim_id": "CLM-0012",
+    "claimant_id": "C-10012",
+    "claimed_amount": 2900.0,
+    "has_attached_image": false,
+    "loss_date": "2026-05-15",
+    "loss_type": "collision",
+    "policy_inception_date": "2024-10-04",
+    "policy_number": "POL-TX-2024-0012",
+    "provider": "Dallas Collision",
+    "state": "TX",
+    "tow_company": null
+  },
+  "derived": {
+    "has_image": false,
+    "policy_age_days": 588,
+    "policy_new_at_loss": false
+  },
+  "schema_version": "case-v1"
+}

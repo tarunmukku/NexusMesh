@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": "sample_deepfake_image.jpg",
+    "image_label": "claim_photo",
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.373780+00:00",
+  "case_id": "CLM-0007",
+  "claim": {
+    "claim_id": "CLM-0007",
+    "claimant_id": "C-10007",
+    "claimed_amount": 8500.0,
+    "has_attached_image": true,
+    "loss_date": "2026-05-28",
+    "loss_type": "collision",
+    "policy_inception_date": "2026-05-20",
+    "policy_number": "POL-FL-2026-0042",
+    "provider": "Sunshine Auto Repair",
+    "state": "FL",
+    "tow_company": "QuickTow LLC"
+  },
+  "derived": {
+    "has_image": true,
+    "policy_age_days": 8,
+    "policy_new_at_loss": true
+  },
+  "schema_version": "case-v1"
+}

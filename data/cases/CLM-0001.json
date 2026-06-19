@@ -1,0 +1,28 @@
+{
+  "assets": {
+    "image_file": null,
+    "image_label": null,
+    "policy_file": "sample_policy.pdf"
+  },
+  "built_at": "2026-06-15T14:09:49.367989+00:00",
+  "case_id": "CLM-0001",
+  "claim": {
+    "claim_id": "CLM-0001",
+    "claimant_id": "C-10001",
+    "claimed_amount": 3200.0,
+    "has_attached_image": false,
+    "loss_date": "2026-04-20",
+    "loss_type": "collision",
+    "policy_inception_date": "2024-03-15",
+    "policy_number": "POL-FL-2024-0001",
+    "provider": "Coastal Auto Body",
+    "state": "FL",
+    "tow_company": "Standard Tow Co"
+  },
+  "derived": {
+    "has_image": false,
+    "policy_age_days": 766,
+    "policy_new_at_loss": false
+  },
+  "schema_version": "case-v1"
+}
